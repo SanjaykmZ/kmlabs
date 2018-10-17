@@ -1,0 +1,328 @@
+<html><head><style>
+html, body { overflow:hidden;margin: 0px; padding: 0px; border: 0px; width: 100%; height: 100vh; }
+
+#bg {height: 100vh;background: linear-gradient(to bottom, gainsboro 30%, silver 100%)
+}
+
+input { border: none; padding: 0px; margin: 0px; height: 40; width: 100%; border:1px solid #eaeaea; outline:none; }
+
+ input:hover{ border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9; } input:focus{ font-size:15;color:dodgerblue;border-color:transparent; }
+
+</style></head><body>
+<div><table width="100%" bgcolor="white"><tr><td><table width="30%"><tr><td align="center"><img width="70" height="auto" src="https://kmlabshelp.000webhostapp.com/Images/General/labswhite2.png"><br><font color="dodgerblue" size="1"><b>P R E S E N T S</table>
+
+<table width="100%"><tr><td align="center"><img width="60%" height="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYe4PluF0UHOLLJKZLJILdzzshNi9eUjEqbWxnaHwFpmZT8xMr"></table>
+
+<div id="bg"><table width="100%"><tr>
+<td><div onClick="Updatevalues()" id="updatevalues" align="center"><br>Update Values</div>
+<td align="center">
+</table>
+
+<br><div><table align="center" border="1" cellpadding="0" width="100%" bgcolor="white">
+<tr height="60">
+<td  width="20%" id="numb1" align="center"><div onClick="click1()" id="numd1"><input type="number" id=num1 ></input></div>
+<td width="20%" id="numb2" align="center"><div onClick="click2()" id="numd2"><input type="number" id=num2></input></div>
+<td width="20%" id="numb3" align="center"><div onClick="click3()"id="numd3"><input type="number" id=num3></input></div>
+<td width="20%" id="numb4" align="center"><div onClick="click4()" id="numd4"><input type="number" id=num4></input></div>
+<td width="20%" id="numb5" align="center"><div onClick="click5()" id="numd5"><input type="number" id=num5></input></div>
+<tr height="60">
+<td width="20%" id="numb6" align="center"><div onClick="click6()" id="numd6"><input type="number" id=num6 ></input></div>
+<td width="20%" id="numb7" align="center"><div onClick="click7()" id="numd7"><input type="number" id=num7></input></div>
+<td width="20%" id="numb8" align="center"><div onClick="click8()" id="numd8"><input type="number" id=num8></input></div>
+<td width="20%" id="numb9" align="center"><div onClick="click9()" id="numd9"><input type="number" id=num9></input></div>
+<td width="20%" id="numb10" align="center"><div onClick="click10()" id="numd10"><input type="number" id=num10></input></div>
+<tr height="60">
+<td width="20%"id="numb11" align="center"><div onClick="click11()" id="numd11"><input type="number" id=num11 ></input></div>
+<td width="20%"id="numb12"  align="center"><div onClick="click12()" id="numd12"><input type="number" id=num12></input></div>
+<td width="20%"id="numb13"  align="center"><div onClick="click13()" id="numd13"><input type="number" id=num13></input></div>
+<td width="20%"id="numb14" align="center"><div onClick="click14()" id="numd14"><input type="number" id=num14></input></div>
+<td width="20%"id="numb15" align="center"><div onClick="click15()" id="numd15"><input type="number" id=num15></input></div>
+<tr height="60">
+<td width="20%"id="numb16" align="center"><div onClick="click16()" id="numd16"><input type="number" id=num16 ></input></div>
+<td width="20%" id="numb17" align="center"><div onClick="click17()" id="numd17"><input type="number" id=num17></input></div>
+<td width="20%" id="numb18" align="center"><div onClick="click18()" id="numd18"><input type="number" id=num18></input></div>
+<td width="20%" id="numb19" align="center"><div onClick="click19()" id="numd19"><input type="number" id=num19></input></div>
+<td width="20%" id="numb20" align="center"><div onClick="click20()" id="numd20"><input type="number" id=num20></input></div>
+<tr height="60">
+<td width="20%" id="numb21" align="center"><div onClick="click21()" id="numd21"><input type="number" id=num21 ></input></div>
+<td width="20%" id="numb22" align="center"><div onClick="click22()" id="numd22"><input type="number" id=num22></input></div>
+<td width="20%" id="numb23" align="center"><div onClick="click23()" id="numd23"><input type="number" id=num23></input></div>
+<td width="20%" id="numb24" align="center"><div onClick="click24()" id="numd24"><input type="number" id=num24></input></div>
+<td width="20%" id="numb25" align="center"><div onClick="click25()" id="numd25"><input type="number" id=num25></input></div>
+</table></div>
+
+<br><br><center><table width="100%"><tr><td align="center"><b><font color="red" size=6><div id="bingoo"><font color="dodgerblue" size=4>WELCOME TO BINGO GAME !!!</div></center>
+
+<script>
+var updated=set1=set2=set3=set4=set5=set6=set7=set8=set9=set10=set11=set12=set13=set14=set15=set16=set17=set18=set19=set20=set21=set22=set23=set24=set25=0;
+var setpos1=setpos2=setpos3=setpos4=setpos5=setpos6=setpos7=setpos8=setpos9=setpos10=setpos11=setpos12=0;
+
+function click1(){if(updated==1){set1=1;document.getElementById("numb1").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click2(){if(updated==1){set2=1;document.getElementById("numb2").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click3(){if(updated==1){set3=1;document.getElementById("numb3").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click4(){if(updated==1){set4=1;document.getElementById("numb4").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click5(){if(updated==1){set5=1;document.getElementById("numb5").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click6(){if(updated==1){set6=1;document.getElementById("numb6").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click7(){if(updated==1){set7=1;document.getElementById("numb7").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click8(){if(updated==1){set8=1;document.getElementById("numb8").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click9(){if(updated==1){set9=1;document.getElementById("numb9").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click10(){if(updated==1){set10=1;document.getElementById("numb10").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click11(){if(updated==1){set11=1;document.getElementById("numb11").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click12(){if(updated==1){set12=1;document.getElementById("numb12").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click13(){if(updated==1){set13=1;document.getElementById("numb13").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click14(){if(updated==1){set14=1;document.getElementById("numb14").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click15(){if(updated==1){set15=1;document.getElementById("numb15").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click16(){if(updated==1){set16=1;document.getElementById("numb16").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click17(){if(updated==1){set17=1;document.getElementById("numb17").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click18(){if(updated==1){set18=1;document.getElementById("numb18").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click19(){if(updated==1){set19=1;document.getElementById("numb19").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click20(){if(updated==1){set20=1;document.getElementById("numb20").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click21(){if(updated==1){set21=1;document.getElementById("numb21").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click22(){if(updated==1){set22=1;document.getElementById("numb22").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click23(){if(updated==1){set23=1;document.getElementById("numb23").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click24(){if(updated==1){set24=1;document.getElementById("numb24").style.backgroundColor = "#DADEDF";bingocheck();}}
+function click25(){if(updated==1){set25=1;document.getElementById("numb25").style.backgroundColor = "#DADEDF";bingocheck();}}
+
+function Updatevalues(){
+document.getElementById("updatevalues").innerHTML="<br><br>";
+updated=1;
+var num1=document.getElementById("num1").value;
+var numd1=checkvalues(num1);
+document.getElementById("num1").value="";
+document.getElementById("numd1").innerHTML=numd1;
+
+var num2=document.getElementById("num2").value;
+var numd2=checkvalues(num2);
+document.getElementById("num2").value="";
+document.getElementById("numd2").innerHTML=numd2;
+
+var num3=document.getElementById("num3").value;
+var numd3=checkvalues(num3);
+document.getElementById("num3").value="";
+document.getElementById("numd3").innerHTML=numd3;
+
+var num4=document.getElementById("num4").value;
+var numd4=checkvalues(num4);
+document.getElementById("num4").value="";
+document.getElementById("numd4").innerHTML=numd4;
+
+var num5=document.getElementById("num5").value;
+var numd5=checkvalues(num5);
+document.getElementById("num5").value="";
+document.getElementById("numd5").innerHTML=numd5;
+
+var num6=document.getElementById("num6").value;
+var numd6=checkvalues(num6);
+document.getElementById("num6").value="";
+document.getElementById("numd6").innerHTML=numd6;
+
+var num7=document.getElementById("num7").value;
+var numd7=checkvalues(num7);
+document.getElementById("num7").value="";
+document.getElementById("numd7").innerHTML=numd7;
+
+var num8=document.getElementById("num8").value;
+var numd8=checkvalues(num8);
+document.getElementById("num8").value="";
+document.getElementById("numd8").innerHTML=numd8;
+
+var num9=document.getElementById("num9").value;
+var numd9=checkvalues(num9);
+document.getElementById("num9").value="";
+document.getElementById("numd9").innerHTML=numd9;
+
+var num10=document.getElementById("num10").value;
+var numd10=checkvalues(num10);
+document.getElementById("num10").value="";
+document.getElementById("numd10").innerHTML=numd10;
+
+var num11=document.getElementById("num11").value;
+var numd11=checkvalues(num11);
+document.getElementById("num11").value="";
+document.getElementById("numd11").innerHTML=numd11;
+
+var num12=document.getElementById("num12").value;
+var numd12=checkvalues(num12);
+document.getElementById("num12").value="";
+document.getElementById("numd12").innerHTML=numd12;
+
+var num13=document.getElementById("num13").value;
+var numd13=checkvalues(num13);
+document.getElementById("num13").value="";
+document.getElementById("numd13").innerHTML=numd13;
+
+var num14=document.getElementById("num14").value;
+var numd14=checkvalues(num14);
+document.getElementById("num14").value="";
+document.getElementById("numd14").innerHTML=numd14;
+
+var num15=document.getElementById("num15").value;
+var numd15=checkvalues(num15);
+document.getElementById("num15").value="";
+document.getElementById("numd15").innerHTML=numd15;
+
+var num16=document.getElementById("num16").value;
+var numd16=checkvalues(num16);
+document.getElementById("num16").value="";
+document.getElementById("numd16").innerHTML=numd16;
+
+var num17=document.getElementById("num17").value;
+var numd17=checkvalues(num17);
+document.getElementById("num17").value="";
+document.getElementById("numd17").innerHTML=numd17;
+
+var num18=document.getElementById("num18").value;
+var numd18=checkvalues(num18);
+document.getElementById("num18").value="";
+document.getElementById("numd18").innerHTML=numd18;
+
+var num19=document.getElementById("num19").value;
+var numd19=checkvalues(num19);
+document.getElementById("num19").value="";
+document.getElementById("numd19").innerHTML=numd19;
+
+var num20=document.getElementById("num20").value;
+var numd20=checkvalues(num20);
+document.getElementById("num20").value="";
+document.getElementById("numd20").innerHTML=numd20;
+
+var num21=document.getElementById("num21").value;
+var numd21=checkvalues(num21);
+document.getElementById("num21").value="";
+document.getElementById("numd21").innerHTML=numd21;
+
+var num22=document.getElementById("num22").value;
+var numd22=checkvalues(num22);
+document.getElementById("num22").value="";
+document.getElementById("numd22").innerHTML=numd22;
+
+var num23=document.getElementById("num23").value;
+var numd23=checkvalues(num23);
+document.getElementById("num23").value="";
+document.getElementById("numd23").innerHTML=numd23;
+
+var num24=document.getElementById("num24").value;
+var numd24=checkvalues(num24);
+document.getElementById("num24").value="";
+document.getElementById("numd24").innerHTML=numd24;
+
+var num25=document.getElementById("num25").value;
+var numd25=checkvalues(num25);
+document.getElementById("num25").value="";
+document.getElementById("numd25").innerHTML=numd25;
+}
+
+function bingocheck(){
+var poss1=set1+set2+set3+set4+set5;
+var poss2=set6+set7+set8+set9+set10;
+var poss3=set11+set12+set13+set14+set15;
+var poss4=set16+set17+set18+set19+set20;
+var poss5=set21+set22+set23+set24+set25;
+var poss6=set1+set6+set11+set16+set21;
+var poss7=set2+set7+set12+set17+set22;
+var poss8=set3+set8+set13+set18+set23;
+var poss9=set4+set9+set14+set19+set24;
+var poss10=set5+set10+set15+set20+set25;
+var poss11=set1+set7+set13+set19+set25;
+var poss12=set5+set9+set13+set17+set21;
+
+if(poss1==5){
+setpos1=1;
+document.getElementById("numb1").style.backgroundColor = "lightgreen";
+document.getElementById("numb2").style.backgroundColor = "lightgreen";
+document.getElementById("numb3").style.backgroundColor = "lightgreen";
+document.getElementById("numb4").style.backgroundColor = "lightgreen";
+document.getElementById("numb5").style.backgroundColor = "lightgreen";}
+if(poss2==5){
+setpos2=1;
+document.getElementById("numb6").style.backgroundColor = "lightgreen";
+document.getElementById("numb7").style.backgroundColor = "lightgreen";
+document.getElementById("numb8").style.backgroundColor = "lightgreen";
+document.getElementById("numb9").style.backgroundColor = "lightgreen";
+document.getElementById("numb10").style.backgroundColor = "lightgreen";}
+if(poss3==5){
+setpos3=1;
+document.getElementById("numb11").style.backgroundColor = "lightgreen";
+document.getElementById("numb12").style.backgroundColor = "lightgreen";
+document.getElementById("numb13").style.backgroundColor = "lightgreen";
+document.getElementById("numb14").style.backgroundColor = "lightgreen";
+document.getElementById("numb15").style.backgroundColor = "lightgreen";}
+if(poss4==5){
+setpos4=1;
+document.getElementById("numb16").style.backgroundColor = "lightgreen";
+document.getElementById("numb17").style.backgroundColor = "lightgreen";
+document.getElementById("numb18").style.backgroundColor = "lightgreen";
+document.getElementById("numb19").style.backgroundColor = "lightgreen";
+document.getElementById("numb20").style.backgroundColor = "lightgreen";}
+if(poss5==5){
+setpos5=1;
+document.getElementById("numb21").style.backgroundColor = "lightgreen";
+document.getElementById("numb22").style.backgroundColor = "lightgreen";
+document.getElementById("numb23").style.backgroundColor = "lightgreen";
+document.getElementById("numb24").style.backgroundColor = "lightgreen";
+document.getElementById("numb25").style.backgroundColor = "lightgreen";}
+if(poss6==5){
+setpos6=1;
+document.getElementById("numb1").style.backgroundColor = "lightgreen";
+document.getElementById("numb6").style.backgroundColor = "lightgreen";
+document.getElementById("numb11").style.backgroundColor = "lightgreen";
+document.getElementById("numb16").style.backgroundColor = "lightgreen";
+document.getElementById("numb21").style.backgroundColor = "lightgreen";}
+if(poss7==5){
+setpos7=1;
+document.getElementById("numb2").style.backgroundColor = "lightgreen";
+document.getElementById("numb7").style.backgroundColor = "lightgreen";
+document.getElementById("numb12").style.backgroundColor = "lightgreen";
+document.getElementById("numb17").style.backgroundColor = "lightgreen";
+document.getElementById("numb22").style.backgroundColor = "lightgreen";}
+if(poss8==5){
+setpos8=1;
+document.getElementById("numb3").style.backgroundColor = "lightgreen";
+document.getElementById("numb8").style.backgroundColor = "lightgreen";
+document.getElementById("numb13").style.backgroundColor = "lightgreen";
+document.getElementById("numb18").style.backgroundColor = "lightgreen";
+document.getElementById("numb23").style.backgroundColor = "lightgreen";}
+if(poss9==5){
+setpos9=1;
+document.getElementById("numb4").style.backgroundColor = "lightgreen";
+document.getElementById("numb9").style.backgroundColor = "lightgreen";
+document.getElementById("numb14").style.backgroundColor = "lightgreen";
+document.getElementById("numb19").style.backgroundColor = "lightgreen";
+document.getElementById("numb24").style.backgroundColor = "lightgreen";}
+if(poss10==5){
+setpos10=1;
+document.getElementById("numb5").style.backgroundColor = "lightgreen";
+document.getElementById("numb10").style.backgroundColor = "lightgreen";
+document.getElementById("numb15").style.backgroundColor = "lightgreen";
+document.getElementById("numb20").style.backgroundColor = "lightgreen";
+document.getElementById("numb25").style.backgroundColor = "lightgreen";}
+if(poss11==5){
+setpos11=1;
+document.getElementById("numb1").style.backgroundColor = "lightgreen";
+document.getElementById("numb7").style.backgroundColor = "lightgreen";
+document.getElementById("numb13").style.backgroundColor = "lightgreen";
+document.getElementById("numb19").style.backgroundColor = "lightgreen";
+document.getElementById("numb25").style.backgroundColor = "lightgreen";}
+if(poss12==5){
+setpos12=1;
+document.getElementById("numb5").style.backgroundColor = "lightgreen";
+document.getElementById("numb9").style.backgroundColor = "lightgreen";
+document.getElementById("numb13").style.backgroundColor = "lightgreen";
+document.getElementById("numb17").style.backgroundColor = "lightgreen";
+document.getElementById("numb21").style.backgroundColor = "lightgreen";}
+
+var bingo=setpos1+setpos2+setpos3+setpos4+setpos5+setpos6+setpos7+setpos8+setpos9+setpos10+setpos11+setpos12;
+if(bingo==1){document.getElementById("bingoo").innerHTML="<font color='white'>B <font color='gainsboro'> I N G O ! ! !";}
+if(bingo==2){document.getElementById("bingoo").innerHTML="<font color='white'>B I<font color='gainsboro'> N G O ! ! !";}
+if(bingo==3){document.getElementById("bingoo").innerHTML="<font color='white'>B I N <font color='gainsboro'>G O ! ! !";}
+if(bingo==4){document.getElementById("bingoo").innerHTML="<font color='white'>B I N G<font color='gainsboro'> O ! ! !";}
+if(bingo>=5){document.getElementById("bingoo").innerHTML="<font color='white'>B I N G O ! ! !";}
+}
+
+function checkvalues(value){
+if(isNaN(value)){return 0;}
+else{
+if(value>25 || value<1){return 0;}
+else{return value;}
+}}
+</script></body></html>
